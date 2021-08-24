@@ -1,0 +1,16 @@
+**Create a Zip archive from folder and exclude files**
+```
+zip -r <archive_name>.zip <folder_to_be_archived> -x *.git* -x *node_modules* -x .env
+```
+
+**Upload file by SSH to remote host**
+```
+scp -i <key_file> <archive_to_upload> <user>@<ip>:<target_folder>
+example: scp -i id_rsa uploader-0.5.4.zip root@165.22.250.243:/home/nazarb
+```
+
+**Download file from remote host by SSH**
+```
+scp -i <key_file> <user>@<ip>:<remote_path> <local_folder>
+example: scp -i id_rsa root@165.22.250.243:/tmp/uploader-0.5.4.zip .
+```
