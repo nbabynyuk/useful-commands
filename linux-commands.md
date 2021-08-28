@@ -1,10 +1,10 @@
-###Common commands
+### Common commands
 ___
 **Sort files by date and show the most recent 5 files**
 ```
 ls -lt | head -5
 ```
-###SSH commands
+### SSH commands
 ___
 **Upload file by SSH to remote host**
 ```
@@ -17,7 +17,7 @@ scp -i <key_file> <user>@<ip>:<remote_path> <local_folder>
 example: scp -i id_rsa root@165.22.250.243:/tmp/uploader-0.5.4.zip .
 ```
 
-###Working with different archive types
+### Working with different archive types
 _____
 **Create a Zip archive from folder and exclude files**
 ```
