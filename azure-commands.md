@@ -15,7 +15,7 @@ az aks get-credentials --resource-group <resource_group_name> --name <cluster_na
 az acr build --image <image_name> --registry <registry_name> --file Dockerfile .
 ```
 
-** Attach container registry to AKS**
+**Attach container registry to AKS**
 ```
 az aks update -n <aks_cluster> -g <group_name> --attach-acr <registry_name>
 ```
