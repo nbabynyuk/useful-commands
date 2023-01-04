@@ -38,5 +38,8 @@ tar -czvf <archive_name> <folder_to_be_archived>
 example: tar -czvf test-out.tgz kafka_2.13-2.8.0/
 ```
 
+**Setup port forwarding**
+ssh -i id_rsa  -L 9001:<remote_host>:9001 -N <username>@<remote_host>
+
 
 
